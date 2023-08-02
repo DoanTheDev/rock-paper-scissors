@@ -1,22 +1,39 @@
 function getComputerChoice() {
-    const computerChoice = ['rock','paper','scissors'];
+    const computerChoice = ['rock','paper','scissors']
    return computerChoice[Math.floor(Math.random() * computerChoice.length)];
-}
+    
+
+};
 function getPlayerChoice() {
-    let playerChoice = prompt('Rock, Paper , or Scissors?') 
-     
+    return prompt('Rock, Paper , or Scissors?').toLowerCase(); 
 }
+
+    
  
-
-function playRound(playerSelection,computerSelection) { if (playerSelection == 'rock', computerSelection === [2] || playerSelection == 'paper', computerSelection === [0] || playerSelection == 'scissors', computerSelection === [1]) {alert('W!')}
- else if(playerSelection == 'rock', computerSelection === [1] || playerSelection == 'paper', computerSelection === [2] || playerSelection == 'scissors', computerSelection === [0]) {alert('L!')}
-  else(playerSelection === computerSelection) {alert('D!')};
-
-}
-
+function playRound(playerSelection,computerSelection) {
+    if (playerSelection === 'rock' && computerSelection === 'scissors') {alert('You WON!')}
+    else if (playerSelection === 'paper' && computerSelection === 'rock') {alert('You WON!')}
+    else if (playerSelection === 'scissors' && computerSelection === 'paper') {alert('You WON!')}
+    else if (playerSelection === computerSelection) {alert('DRAW!')}  
+    else  {alert('You LOSE!')} }
 
 
 const playerSelection = getPlayerChoice()
 const computerSelection = getComputerChoice()
 
-console.log(playRound(playerSelection,computerSelection))
+
+function game(playRound(playerSelection,computerSelection)) {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+    
