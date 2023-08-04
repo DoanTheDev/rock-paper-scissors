@@ -1,39 +1,41 @@
-function getComputerChoice() {
-    const computerChoice = ['rock','paper','scissors']
-   return computerChoice[Math.floor(Math.random() * computerChoice.length)];
-    
+const availableChoices = ["rock", "paper", "scissors"];
 
+const getComputerChoice = () => {
+  return availableChoices[Math.floor(Math.random() * availableChoices.length)];
 };
-function getPlayerChoice() {
-    return prompt('Rock, Paper , or Scissors?').toLowerCase(); 
-}
 
-    
- 
-function playRound(playerSelection,computerSelection) {
-    if (playerSelection === 'rock' && computerSelection === 'scissors') {alert('You WON!')}
-    else if (playerSelection === 'paper' && computerSelection === 'rock') {alert('You WON!')}
-    else if (playerSelection === 'scissors' && computerSelection === 'paper') {alert('You WON!')}
-    else if (playerSelection === computerSelection) {alert('DRAW!')}  
-    else  {alert('You LOSE!')} }
+const getPlayerChoice = () => {
+  const selectedChoice = prompt("Rock, Paper , or Scissors?").toLowerCase();
 
+  if (availableChoices.includes(selectedChoice)) {
+    return selectedChoice;
+  } else {
+    alert("Please enter a valid choice!");
+    return getPlayerChoice();
+  }
+};
 
-const playerSelection = getPlayerChoice()
-const computerSelection = getComputerChoice()
+const playRound = () => {
+  const wantsToPlay = prompt("Do you want to play a game? (Y/N)").toLowerCase();
+  if (wantsToPlay === "n") return;
+  if (wantsToPlay !== "y") return playRound();
 
+  const playerChoice = getPlayerChoice();
+  const computerChoice = getComputerChoice();
 
-function game(playRound(playerSelection,computerSelection)) {
-    
-}
+  const message = `You chose ${playerChoice} and the computer chose ${computerChoice}.`;
 
+  if (playerChoice === "rock" && computerChoice === "scissors") {
+    alert(`You WON! \n\n ${message}`);
+  } else if (playerChoice === "paper" && computerChoice === "rock") {
+    alert(`You WON! \n\n ${message}`);
+  } else if (playerChoice === "scissors" && computerChoice === "paper") {
+    alert(`You WON! \n\n ${message}`);
+  } else if (playerChoice === computerChoice) {
+    alert(`DRAW! \n\n ${message}`);
+  } else {
+    alert(`You LOSE! \n\n ${message}`);
+  }
+};
 
-
-
-
-
-
-
-
-
-
-    
+playRound();
