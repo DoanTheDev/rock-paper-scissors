@@ -11,9 +11,9 @@ function getPlayerChoice() {
     
  
 function playRound(playerSelection,computerSelection) {
-    if (playerSelection === 'rock' && computerSelection === 'scissors') {alert('You WON!')}
-    else if (playerSelection === 'paper' && computerSelection === 'rock') {alert('You WON!')}
-    else if (playerSelection === 'scissors' && computerSelection === 'paper') {alert('You WON!')}
+    if (playerSelection === 'rock' && computerSelection === 'scissors') {alert('You WON! Rock beats Scissors!')}
+    else if (playerSelection === 'paper' && computerSelection === 'rock') {alert('You WON! Paper beats Rock!')}
+    else if (playerSelection === 'scissors' && computerSelection === 'paper') {alert('You WON! Scissors beats Paper!')}
     else if (playerSelection === computerSelection) {alert('DRAW!')}  
     else  {alert('You LOSE!')} }
 
@@ -21,10 +21,17 @@ function playRound(playerSelection,computerSelection) {
 const playerSelection = getPlayerChoice()
 const computerSelection = getComputerChoice()
 
+console.log(playRound(playerSelection, computerSelection));
 
-function game(playRound(playerSelection,computerSelection)) {
+
+function game() {
     
 }
+
+
+
+
+
 
 
 
