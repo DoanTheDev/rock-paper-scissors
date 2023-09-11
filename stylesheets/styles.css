@@ -1,0 +1,40 @@
+body{ width: auto;
+    height: auto;
+    min-height: 100%;
+    
+background-color: gray;}
+
+img{
+    height: 200px;
+}
+
+.container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    height: 500px;
+}
+.rock {
+    padding: auto;
+    background-color: red;
+}
+
+.paper {
+    padding: auto;
+    background-color: green;
+}
+
+.scissors {
+   padding: auto    ;
+    background-color: blue;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+  }
+

@@ -1,3 +1,4 @@
+
 function getComputerChoice() {
     const computerChoice = ['rock','paper','scissors']
    return computerChoice[Math.floor(Math.random() * computerChoice.length)];
@@ -24,9 +25,7 @@ const computerSelection = getComputerChoice()
 console.log(playRound(playerSelection, computerSelection));
 
 
-function game() {
-    
-}
+
 
 
 
