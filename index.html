@@ -1,23 +1,53 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>RPS</title>
-    <link rel="stylesheet"  href="stylesheets/styles.css">
+<title> Rock Paper Scissors</title>
+<link rel="stylesheet" href="stylesheets/styles.css">
+<link href="https://fonts.cdnfonts.com/css/atari" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <button class="rock"><img src="icons/coal.png" alt="rock"></button>
-    <button class="paper"><img src="icons/file.png" alt="paper"></button>
-    <button class="scissors"><img src="icons/scissors.png" alt="scissors"> </button>
-</div>
-<footer>
-    <h1> Rock-Paper-Scissors Game</h1>
-    <h2> Tony Doan</h2>
-</footer>
-<script src="scripts/scripts.js">
+ 
+<section class="game">
 
-    
-</script>
+ <!-- title -->
+     <div class="title"> <h1>Classic Rock Paper Scissors Game</h1> </div>
+
+ <!--Display player and computer scores -->
+    <div class="score">
+
+        <div class="playerScore"><h2>Player</h2></div>
+        <div class="p-count count">0</div>
+
+        <div class="computerScore"><h2>Computer</h2></div>
+        <div class="c-count count">0</div>
+        
+    </div>
+
+    <div class="move">Choose your move</div>
+
+<!--Number of moves left before the game ends-->
+    <div class="movesLeft">Moves left: 10</div>
+
+<!--Options avaible to player to play the game-->
+    <div class="options">
+        <button class="rock"> rock</button>
+        <button class="paper"> paper </button>
+        <button class="scissors"> scissors  </button>
+    </div>
+
+<!-- Final result of the game-->
+    <div class="result">  </div>
+
+<!-- Restart button for the game-->
+    <button class="reload">Restart</button>
+   
+</section>
+
+
+
+
+
+
+<script src="scripts/scripts.js"></script>
 </body>
 </html>
