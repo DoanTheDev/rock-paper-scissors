@@ -102,7 +102,7 @@ const game = () => {
 		movesLeft.style.display = 'none';
 
 		if(playerScore > computerScore){
-			result.style.fontSize = '2rem';
+			result.style.fontSize = '1rem';
 			result.innerText = 'You Won The Game'
 			result.style.color = 'White';
 		}
@@ -118,7 +118,8 @@ const game = () => {
 		}
 		reloadBtn.innerText = 'Restart';
 		reloadBtn.style.display = 'flex';
-        reloadBtn.style.text = 'center';
+        reloadBtn.style.justifyContent = 'center';
+        reloadBtn.style.alignItems = 'center';
 		reloadBtn.addEventListener('click',() => {
 			window.location.reload();
 		})
