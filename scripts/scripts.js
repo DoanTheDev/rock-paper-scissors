@@ -1,7 +1,7 @@
 // app.js
 
 // Complete logic of game inside this function
-const game = () => {
+const game = () =>{ 
 	let playerScore = 0;
 	let computerScore = 0;
 	let moves = 0;
@@ -120,6 +120,7 @@ const game = () => {
 		reloadBtn.style.display = 'flex';
         reloadBtn.style.justifyContent = 'center';
         reloadBtn.style.alignItems = 'center';
+		reloadBtn.style.color ='white';
 		reloadBtn.addEventListener('click',() => {
 			window.location.reload();
 		})
